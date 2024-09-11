@@ -1,4 +1,4 @@
-import Usuario from '../models/Usuario.js';
+import Usuario from "../models/Usuario.js";
 
 // Mostrar todos los registros
 export const getAllUsuarios = async (req, res) => {

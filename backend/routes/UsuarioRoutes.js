@@ -1,27 +1,27 @@
-import express from 'express';
+import express from "express";
 import {
   getAllUsuarios,
   getUsuarioById,
   createUsuario,
   updateUsuario,
-  deleteUsuario
-} from '../controllers/UsuarioController.js';
+  deleteUsuario,
+} from "../controllers/UsuarioController.js";
 
 const router = express.Router();
 
 // Obtener todos los usuarios
-router.get('/', getAllUsuarios);
+router.get("/", getAllUsuarios);
 
 // Obtener un usuario por ID
-router.get('/:cod', getUsuarioById);
+router.get("/:cod", getUsuarioById);
 
 // Crear un nuevo usuario
-router.post('/', createUsuario);
+router.post("/", createUsuario);
 
 // Actualizar un usuario
-router.put('/:cod', updateUsuario);
+router.put("/:cod", updateUsuario);
 
 // Eliminar un usuario
-router.delete('/:cod', deleteUsuario);
+router.delete("/:cod", deleteUsuario);
 
 export default router;
